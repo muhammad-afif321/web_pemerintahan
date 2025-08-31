@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelurahan Ciketing Udik - Pemerintahan Kecamatan Bantargebang</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Kelurahan Ciketing Udik</h1>
+                <p>Pemerintahan Kecamatan Bantargebang, Kota Bekasi</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#profil" class="nav-link">Profil</a></li>
+                    <li><a href="#berita" class="nav-link">Berita</a></li>
+                    <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Beranda Section -->
+        <section id="beranda" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h2>Selamat Datang di Kelurahan Ciketing Udik</h2>
+                        <p class="hero-description">
+                            Kelurahan Ciketing Udik merupakan salah satu kelurahan di Kecamatan Bantargebang, Kota Bekasi, 
+                            yang berkomitmen memberikan pelayanan terbaik kepada masyarakat dengan mengedepankan transparansi, 
+                            akuntabilitas, dan partisipasi aktif warga.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3>25,393</h3>
+                                <p>Jiwa Penduduk</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>4.36</h3>
+                                <p>Km² Luas Wilayah</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>5,824</h3>
+                                <p>Jiwa/Km² Kepadatan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="kelurahan-ciketing-udik.webp" alt="Kelurahan Ciketing Udik">
+                    </div>
+                </div>
+                
+                <div class="vision-mission">
+                    <div class="vm-item">
+                        <h3><i class="fas fa-eye"></i> Visi</h3>
+                        <p>Mewujudkan Kelurahan Ciketing Udik yang maju, sejahtera, dan berkelanjutan dengan pelayanan prima kepada masyarakat.</p>
+                    </div>
+                    <div class="vm-item">
+                        <h3><i class="fas fa-bullseye"></i> Misi</h3>
+                        <ul>
+                            <li>Meningkatkan kualitas pelayanan publik yang transparan dan akuntabel</li>
+                            <li>Memberdayakan masyarakat dalam pembangunan berkelanjutan</li>
+                            <li>Menjaga kelestarian lingkungan dan tata ruang wilayah</li>
+                            <li>Meningkatkan kesejahteraan masyarakat melalui program pemberdayaan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+        <section id="profil" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Profil Kelurahan</h2>
+                    <button id="exportPDF" class="btn-pdf">
+                        <i class="fas fa-file-pdf"></i> Export PDF
+                    </button>
+                </div>
+                
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h3>Status Administratif & Sejarah</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <strong>Status:</strong> Kelurahan
+                            </div>
+                            <div class="info-item">
+                                <strong>Dasar Hukum:</strong> Perda No. 02 Tahun 2002
+                            </div>
+                            <div class="info-item">
+                                <strong>Asal Nama:</strong> "Ci" (air) + "keting" (lele) + "udik" (ujung)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h3>Data Administratif & Geografis</h3>
+                        <div class="data-table">
+                            <table>
+                                <tr><td>Kode Pos</td><td>17153</td></tr>
+                                <tr><td>Kode Kemendagri</td><td>32.75.07.1007</td></tr>
+                                <tr><td>Luas Wilayah</td><td>±4,36 km²</td></tr>
+                                <tr><td>Koordinat</td><td>6°20′54.681″S, 106°59′13.928″E</td></tr>
+                                <tr><td>Elevasi</td><td>±55 mdpl</td></tr>
+                                <tr><td>Populasi</td><td>±25.393 jiwa (2023)</td></tr>
+                                <tr><td>Kepadatan</td><td>±5.824 jiwa/km²</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h3>Konteks Lingkungan & Fungsi Wilayah</h3>
+                        <p>Kelurahan Ciketing Udik merupakan bagian dari TPST Bantargebang dengan luas 110,3 ha, 
+                        terdiri dari 81,91% area penampungan dan 18,09% infrastruktur pendukung.</p>
+                    </div>
+
+                    <div class="facilities-grid">
+                        <div class="facility-card">
+                            <h4><i class="fas fa-graduation-cap"></i> Pendidikan</h4>
+                            <ul>
+                                <li>SDN Ciketing Udik 1,2,3 & 4</li>
+                                <li>RA Nurul Iman</li>
+                                <li>4 SD Negeri, 23 SD Swasta</li>
+                                <li>1 SLTP Negeri, 3 SLTP Swasta</li>
+                                <li>2 SLTA Negeri</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <h4><i class="fas fa-hospital"></i> Kesehatan</h4>
+                            <ul>
+                                <li>9 Puskesmas</li>
+                                <li>9 Posyandu</li>
+                                <li>1 Dokter Umum</li>
+                                <li>1 Bidan</li>
+                                <li>Total 10 Tenaga Kesehatan</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <h4><i class="fas fa-mosque"></i> Tempat Ibadah</h4>
+                            <ul>
+                                <li>13 Masjid</li>
+                                <li>31 Langgar</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="map-section">
+                        <h3>Peta Lokasi</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.123456789!2d106.9913928!3d-6.3487681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a2b3c4d5e6%3A0x1234567890abcdef!2sCiketing%20Udik%2C%20Bantargebang%2C%20Bekasi%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Berita Section -->
+        <section id="berita" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Berita Terkini</h2>
+                </div>
+                
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="Program-Pemberdayaan-Masyarakat-Kelurahan-Ciketing-Udik.jpg" alt="Berita 1">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">15 Januari 2025</span>
+                            <h3>Program Pemberdayaan Masyarakat Kelurahan Ciketing Udik</h3>
+                            <p>Kelurahan Ciketing Udik meluncurkan program pemberdayaan masyarakat untuk meningkatkan kesejahteraan warga melalui pelatihan keterampilan dan bantuan modal usaha...</p>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="Peningkatan-Fasilitas-Kesehatan-di-Posyandu-Kelurahan.jpg" alt="Berita 2">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">12 Januari 2025</span>
+                            <h3>Peningkatan Fasilitas Kesehatan di Posyandu Kelurahan</h3>
+                            <p>Dalam upaya meningkatkan pelayanan kesehatan masyarakat, Kelurahan Ciketing Udik mengadakan renovasi dan penambahan fasilitas di 9 Posyandu yang tersebar di wilayah kelurahan...</p>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="Gotong-Royong-Pembersihan-Lingkungan-Bersama-Warga.webp" alt="Berita 3">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">10 Januari 2025</span>
+                            <h3>Gotong Royong Pembersihan Lingkungan Bersama Warga</h3>
+                            <p>Kegiatan gotong royong pembersihan lingkungan dilaksanakan setiap minggu pertama bulan ini dengan partisipasi aktif warga untuk menjaga kebersihan dan kelestarian lingkungan...</p>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan Section -->
+        <section id="layanan" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Layanan Publik</h2>
+                    <p>Berbagai layanan administrasi yang dapat Anda akses di Kelurahan Ciketing Udik</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Kartu Tanda Penduduk (KTP)</h3>
+                        <p>Pelayanan pembuatan dan perpanjangan KTP untuk warga Kelurahan Ciketing Udik</p>
+                        <button class="btn-service">Ajukan Permohonan</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Kartu Keluarga (KK)</h3>
+                        <p>Pelayanan pembuatan, perubahan, dan penambahan anggota keluarga dalam KK</p>
+                        <button class="btn-service">Ajukan Permohonan</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Akta Kelahiran</h3>
+                        <p>Pelayanan pembuatan akta kelahiran untuk bayi yang baru lahir</p>
+                        <button class="btn-service">Ajukan Permohonan</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Surat Keterangan Domisili</h3>
+                        <p>Pelayanan pembuatan surat keterangan domisili untuk berbagai keperluan</p>
+                        <button class="btn-service">Ajukan Permohonan</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Surat Keterangan Usaha</h3>
+                        <p>Pelayanan pembuatan surat keterangan usaha untuk pelaku UMKM</p>
+                        <button class="btn-service">Ajukan Permohonan</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Surat Keterangan Belum Menikah</h3>
+                        <p>Pelayanan pembuatan surat keterangan belum menikah</p>
+                        <button class="btn-service">Ajukan Permohonan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Hubungi Kami</h2>
+                    <p>Sampaikan pertanyaan, saran, atau keluhan Anda kepada kami</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Raya Ciketing Udik<br>Kecamatan Bantargebang<br>Kota Bekasi, Jawa Barat 17153</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>(021) 8888-9999</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>kelurahan@ciketingudik.bekasikota.go.id</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Pelayanan</h4>
+                                <p>Senin - Jumat: 08:00 - 16:00 WIB<br>Sabtu: 08:00 - 12:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap *</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjek">Subjek *</label>
+                            <input type="text" id="subjek" name="subjek" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">Pesan *</label>
+                            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kelurahan Ciketing Udik</h3>
+                    <p>Melayani dengan sepenuh hati untuk kemajuan dan kesejahteraan masyarakat Ciketing Udik.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#berita">Berita</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-phone"></i> (021) 8888-9999</p>
+                    <p><i class="fas fa-envelope"></i> kelurahan@ciketingudik.bekasikota.go.id</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Kelurahan Ciketing Udik. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
